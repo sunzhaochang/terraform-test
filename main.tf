@@ -20,5 +20,9 @@ data "terraform_remote_state" "foo" {
 
   config = {
     organization = "clouder"
+
+    workspaces {
+      name = "terraform-test"
+    }
   }
 }
