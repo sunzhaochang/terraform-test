@@ -15,7 +15,7 @@ terraform {
   }
 }
 
-data "terraform_remote_state" "foo" {
+data "terraform_remote_state" "default" {
   backend = "remote"
 
   config = {
@@ -26,3 +26,4 @@ data "terraform_remote_state" "foo" {
     }
   }
 }
+
