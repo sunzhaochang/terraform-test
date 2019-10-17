@@ -22,7 +22,7 @@ data "terraform_remote_state" "foo" {
     organization = "clouder"
 
     workspaces = {
-      name = "terraform-test"
+      name = "test-vpc"
     }
   }
 }
