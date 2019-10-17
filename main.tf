@@ -15,6 +15,10 @@ terraform {
   }
 }
 
-data "alicloud_vpcs" "default" {
+data "terraform_remote_state" "foo" {
   backend = "remote"
+
+  config = {
+    organization = "clouder"
+  }
 }
