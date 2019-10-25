@@ -1,3 +1,3 @@
 variable "name" {
-  default = "terraform-test02"
+  default = "terraform-test03"
 }
